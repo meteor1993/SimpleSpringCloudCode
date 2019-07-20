@@ -25,6 +25,7 @@
 
     <modules>
         <module>ch2_1_eureka_server</module>
+        <module>ch2_1_eureka_client</module>
     </modules>
 
     <dependencyManagement>
