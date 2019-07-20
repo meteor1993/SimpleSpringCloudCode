@@ -1,2 +1,2 @@
-# SimpleSpringCloud
-《深入浅出Spring Cloud》代码仓库
+# Spring Cloud微服务开发从入门到进阶
+《Spring Cloud微服务开发从入门到进阶》代码仓库
