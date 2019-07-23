@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-eureka-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:809d3ffb-6860-45a7-b395-123e26af8e42@localhost:8761/eureka/

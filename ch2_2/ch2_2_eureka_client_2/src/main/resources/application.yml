@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-cloud-eureka-client-2
+eureka:
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      zone: zone-2
+  client:
+    prefer-same-zone-eureka: true
+    region: shanghai
+    availability-zones:
+      shanghai: zone-1, zone-2
+    service-url:
+      zone-1: http://localhost:8761/eureka/
+      zone-2: http://localhost:8762/eureka/

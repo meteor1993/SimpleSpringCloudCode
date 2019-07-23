@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-cloud-eureka-server
+  profiles:
+    active: security

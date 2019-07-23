@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cloud-eureka-consumer
+server:
+  port: 8000
+eureka:
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      zone: zone-1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    prefer-same-zone-eureka: true
+    region: shanghai
+    availability-zones:
+      shanghai: zone-1,zone-2
+    service-url:
+      zone-1: http://localhost:8761/eureka/
+      zone-2: http://localhost:8762/eureka/
