@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: spring-cloud-eureka-client-1
+    name: spring-cloud-eureka-client
 eureka:
   instance:
     prefer-ip-address: true
