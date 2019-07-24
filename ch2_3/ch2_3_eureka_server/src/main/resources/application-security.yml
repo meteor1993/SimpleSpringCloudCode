@@ -13,8 +13,6 @@ eureka:
     wait-time-in-ms-when-sync-empty: 0
 spring:
   security:
-    basic:
-      enable: false
     user:
       name: admin
       password: 809d3ffb-6860-45a7-b395-123e26af8e42
