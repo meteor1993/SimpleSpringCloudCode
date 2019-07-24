@@ -16,6 +16,10 @@
 
     <modules>
         <module>ch2_2_eureka_server_1</module>
+        <module>ch2_2_eureka_server_2</module>
+        <module>ch2_2_eureka_client_1</module>
+        <module>ch2_2_eureka_client_2</module>
+        <module>ch2_2_eureka_consumer</module>
     </modules>
 
     <properties>
