@@ -7,7 +7,7 @@ eureka:
   instance:
     hostname: localhost
     metadata-map:
-      zone: zone-1
+      zone: zone-2
   client:
     register-with-eureka: false
     fetch-registry: false
