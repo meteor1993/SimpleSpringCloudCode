@@ -10,8 +10,10 @@ eureka:
   instance:
     prefer-ip-address: true
 spring-cloud-client:
-#  配置负载均衡策略
   ribbon:
+#    脱离Eureka配置服务地址
+    listOfServers: http://localhost:8000, http://localhost:9000
+    #  配置负载均衡策略
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 #  超时与重试配置
     ConnectTimeout: 3000
@@ -21,6 +23,9 @@ spring-cloud-client:
     OkToRetryOnAllOperations: true
 #  饥饿加载配置
 ribbon:
+#  脱离Eureka配置
+  eureka:
+    enabled: false
   eager-load:
     enabled: true
     clients: spring-cloud-client
