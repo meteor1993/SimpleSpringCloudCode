@@ -15,8 +15,8 @@ import org.springframework.context.annotation.Configuration;
  * @email: inwsy@hotmail.com
  * Description:
  */
-//@Configuration
-//@AvoidScan
+@Configuration
+@AvoidScan
 public class RibbonLoadBalanceConfig {
 
     @Autowired

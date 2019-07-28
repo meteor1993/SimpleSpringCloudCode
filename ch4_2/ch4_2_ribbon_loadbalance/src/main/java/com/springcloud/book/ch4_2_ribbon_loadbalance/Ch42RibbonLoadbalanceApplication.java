@@ -13,10 +13,10 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-//@RibbonClients(value = {
-//        @RibbonClient(name = "spring-cloud-client", configuration = RibbonLoadBalanceConfig.class)
-//})
-//@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {AvoidScan.class})})
+@RibbonClients(value = {
+        @RibbonClient(name = "spring-cloud-client", configuration = RibbonLoadBalanceConfig.class)
+})
+@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {AvoidScan.class})})
 public class Ch42RibbonLoadbalanceApplication {
 
     public static void main(String[] args) {
