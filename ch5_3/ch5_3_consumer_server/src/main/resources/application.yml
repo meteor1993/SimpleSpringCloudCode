@@ -1,5 +1,5 @@
 server:
-  port: 7000
+  port: 8080
 spring:
   application:
     name: spring-cloud-consumer-server
@@ -14,4 +14,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: hystrix.stream

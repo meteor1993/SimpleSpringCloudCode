@@ -19,7 +19,6 @@
         <module>ch5_3_consumer_server</module>
         <module>ch5_3_eureka_server</module>
         <module>ch5_3_provider_server</module>
-        <module>ch5_3_hystrix_dashboard</module>
     </modules>
 
     <properties>
@@ -45,10 +44,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
