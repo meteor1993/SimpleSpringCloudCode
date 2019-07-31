@@ -12,10 +12,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-public class Ch52ConsumerServerApplication {
+public class Ch53ConsumerServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Ch52ConsumerServerApplication.class, args);
+        SpringApplication.run(Ch53ConsumerServerApplication.class, args);
     }
 
 }
