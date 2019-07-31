@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ch5_3_consumer_server</module>
+        <module>ch5_3_consumer_server_hystrix_dashboard</module>
         <module>ch5_3_eureka_server</module>
         <module>ch5_3_provider_server</module>
     </modules>

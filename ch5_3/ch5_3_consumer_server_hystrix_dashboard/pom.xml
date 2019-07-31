@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch5_3_consumer_server</artifactId>
+    <artifactId>ch5_3_consumer_server_hystrix_dashboard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch5_3_consumer_server</name>
-    <description>ch5_3_consumer_server</description>
+    <name>ch5_3_consumer_server_hystrix_dashboard</name>
+    <description>ch5_3_consumer_server_hystrix_dashboard</description>
     <packaging>jar</packaging>
 
     <properties>
