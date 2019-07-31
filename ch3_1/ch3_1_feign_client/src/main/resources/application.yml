@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-cloud-feign-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+feign:
+  hystrix:
+    enabled: true
