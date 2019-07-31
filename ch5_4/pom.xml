@@ -9,18 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springcloud.book</groupId>
-    <artifactId>ch5_3</artifactId>
+    <artifactId>ch5_4</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch5_3</name>
-    <description>ch5_3</description>
+    <name>ch5_4</name>
+    <description>ch5_4</description>
     <packaging>pom</packaging>
-
-    <modules>
-        <module>ch5_3_consumer_server_hystrix_dashboard</module>
-        <module>ch5_3_eureka_server</module>
-        <module>ch5_3_provider_server</module>
-        <module>ch5_3_turbine</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,6 +21,19 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -40,30 +46,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/libs-milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

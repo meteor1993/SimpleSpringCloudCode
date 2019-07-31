@@ -8,11 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch5_3_provider_server</artifactId>
+    <artifactId>ch5_3_turbine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch5_3_provider_server</name>
-    <description>ch5_3_provider_server</description>
-    <packaging>jar</packaging>
+    <name>ch5_3_turbine</name>
+    <description>ch5_3_turbine</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,7 +34,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
         </dependency>
     </dependencies>
 

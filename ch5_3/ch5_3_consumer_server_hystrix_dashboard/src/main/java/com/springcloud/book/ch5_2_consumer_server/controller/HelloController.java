@@ -24,4 +24,9 @@ public class HelloController {
     public String hello(@RequestParam("name") String name) {
         return helloRemote.hello(name);
     }
+
+    @GetMapping(value = "/helloProvider")
+    public String helloProvider() {
+        return "helloProvider";
+    }
 }
