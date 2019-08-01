@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch3_2_feign_gzip:war">
+    <output-path>$PROJECT_DIR$/ch3_2_feign_gzip/target</output-path>
+    <root id="archive" name="ch3_2_feign_gzip.war">
+      <element id="artifact" artifact-name="ch3_2_feign_gzip:war exploded" />
+    </root>
+  </artifact>
+</component>
