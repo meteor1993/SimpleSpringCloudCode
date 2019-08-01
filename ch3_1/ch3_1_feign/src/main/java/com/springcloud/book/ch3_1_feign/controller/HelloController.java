@@ -15,7 +15,7 @@ public class HelloController {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping(value = "/searchGithub")
+    @RequestMapping(value = "/searchApi")
     public String searchGithub(@RequestParam(value = "q") String query){
         return helloService.searchGithub(query);
     }
