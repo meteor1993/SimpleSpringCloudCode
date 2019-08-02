@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-feign
+feign:
+  client:
+    config:
+      feignName: github-api #需要配置的feignName
+        connectTimeout:

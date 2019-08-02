@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ch3_2_feign_config:war exploded">
+    <output-path>$PROJECT_DIR$/ch3_2_feign_config/target/ch3_2_feign_config</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ch3_2_feign_config" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ch3_2_feign_config/target/ch3_2_feign_config/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ch3_2_feign_config/web/Web" />
+    </root>
+  </artifact>
+</component>

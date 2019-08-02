@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_config" />
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_gzip" />
   </component>
   <component name="MavenProjectsManager">

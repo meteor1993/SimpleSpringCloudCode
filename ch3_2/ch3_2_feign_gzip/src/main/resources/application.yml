@@ -6,8 +6,8 @@ spring:
 feign:
   compression:
     request:
-      enabled: true #ÅäÖÃÇëÇóGZIPÑ¹Ëõ
-      mime-types: text/xml,application/xml,application/json #ÅäÖÃÑ¹ËõÖ§³ÖµÄMIME TYPE
-      min-request-size: 2048 #ÅäÖÃÑ¹ËõÊı¾İ´óĞ¡µÄÏÂÏŞ
+      enabled: true #é…ç½®è¯·æ±‚GZIPå‹ç¼©
+      mime-types: text/xml,application/xml,application/json #é…ç½®å‹ç¼©æ”¯æŒçš„MIME TYPE
+      min-request-size: 2048 #é…ç½®å‹ç¼©æ•°æ®å¤§å°çš„ä¸‹é™
     response:
-      enabled: true #ÅäÖÃÏìÓ¦GZIPÑ¹Ëõ
+      enabled: true #é…ç½®å“åº”GZIPå‹ç¼©

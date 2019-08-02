@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ch3_2.iml" filepath="$PROJECT_DIR$/ch3_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_config/ch3_2_feign_config.iml" filepath="$PROJECT_DIR$/ch3_2_feign_config/ch3_2_feign_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_gzip/ch3_2_feign_gzip.iml" filepath="$PROJECT_DIR$/ch3_2_feign_gzip/ch3_2_feign_gzip.iml" />
     </modules>
   </component>
