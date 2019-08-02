@@ -32,12 +32,12 @@ public class ExceptionController {
     }
 
     @GetMapping("/getFallbackMethodTest")
-    @HystrixCommand
+    @HystrixCommand(fallbackMethod = "fallback")
     public String getFallbackMethodTest(){
         throw new RuntimeException("getFallbackMethodTest failed");
     }
 
-    public String fallback(String id, Throwable throwable) {
+    public String fallback(Throwable throwable) {
         log.error(throwable.getMessage());
         return "this is fallback message";
     }

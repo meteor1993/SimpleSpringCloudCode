@@ -1,2 +1,12 @@
 server:
   port: 8081
+spring:
+  application:
+    name: spring-cloud-hystrix-exception
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true
