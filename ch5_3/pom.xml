@@ -21,6 +21,7 @@
         <module>ch5_3_provider_server</module>
         <module>ch5_3_turbine</module>
         <module>ch5_3_hystrix_exception</module>
+        <module>ch5_3_hystrix_cache</module>
     </modules>
 
     <properties>
