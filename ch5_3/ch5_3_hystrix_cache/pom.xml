@@ -12,6 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>ch5_3_hystrix_cache</name>
     <description>ch5_3_hystrix_cache</description>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,0 +1,40 @@
+package com.springcloud.book.ch5_3_hystrix_thread.config;
+
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+
+import java.util.concurrent.Callable;
+
+/**
+ * Created with IntelliJ IDEA.
+ *
+ * @User: weishiyao
+ * @Date: 2019/8/4
+ * @Time: 19:29
+ * @email: inwsy@hotmail.com
+ * Description:
+ */
+public class HystrixThreadCallable<S> implements Callable<S> {
+
+    private final RequestAttributes requestAttributes;
+    private final Callable<S> delegate;
+    private String params;
+
+    public HystrixThreadCallable(Callable<S> callable, RequestAttributes requestAttributes,String params) {
+        this.delegate = callable;
+        this.requestAttributes = requestAttributes;
+        this.params = params;
+    }
+
+    @Override
+    public S call() throws Exception {
+        try {
+            RequestContextHolder.setRequestAttributes(requestAttributes);
+            HystrixThreadLocal.threadLocal.set(params);
+            return delegate.call();
+        } finally {
+            RequestContextHolder.resetRequestAttributes();
+            HystrixThreadLocal.threadLocal.remove();
+        }
+    }
+}
