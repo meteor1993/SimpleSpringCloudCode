@@ -21,7 +21,9 @@ public class HelloServiceImpl implements HelloService {
 
     @Override
     public String hello(String name) {
-        return null;
+        String json = restTemplate.getForObject("http://spring-cloud-provider-server/hello?name={name}", String.class, name);
+        System.out.println(json);
+        return json;
     }
 
     @Override
