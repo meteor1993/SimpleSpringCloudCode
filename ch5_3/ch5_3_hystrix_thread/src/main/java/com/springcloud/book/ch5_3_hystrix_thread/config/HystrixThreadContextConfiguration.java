@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @email: inwsy@hotmail.com
  * Description:
  */
+@Configuration
 public class HystrixThreadContextConfiguration {
     @Bean
     public SpringCloudHystrixConcurrencyStrategy springCloudHystrixConcurrencyStrategy() {

@@ -57,8 +57,7 @@ public class SpringCloudHystrixConcurrencyStrategy extends HystrixConcurrencyStr
             HystrixPlugins.getInstance().registerEventNotifier(eventNotifier);
             HystrixPlugins.getInstance().registerMetricsPublisher(metricsPublisher);
             HystrixPlugins.getInstance().registerPropertiesStrategy(propertiesStrategy);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw e;
         }
     }

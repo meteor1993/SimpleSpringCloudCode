@@ -23,6 +23,7 @@ public class HystrixThreadServiceI implements HystrixThreadService {
 
     private final Logger log = LoggerFactory.getLogger(HystrixThreadServiceI.class);
 
+    @HystrixCommand
     public String getUser(Integer id) {
         log.info("HystrixThreadService, Current thread : " + Thread.currentThread().getId());
         log.info("HystrixThreadService, Thread object : " + HystrixThreadLocal.threadLocal.get());
