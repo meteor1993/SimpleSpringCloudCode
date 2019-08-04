@@ -73,6 +73,11 @@ public class HystrixCacheController {
         return "success";
     }
 
+    /**
+     * 缓存删除测试
+     * @param name
+     * @return
+     */
     @GetMapping("/removeHello")
     public String removeHello(@RequestParam("name") String name) {
         // 调用接口并缓存数据
