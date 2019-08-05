@@ -1,0 +1,8 @@
+# 路由前缀配置
+zuul:
+  prefix: /pre
+  routes:
+    spring-cloud-client-server-a:
+      path: /client/**
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-A
+#      stripPrefix: false

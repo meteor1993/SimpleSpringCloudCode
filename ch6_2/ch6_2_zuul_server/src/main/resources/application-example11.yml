@@ -1,0 +1,8 @@
+# 敏感消息头配置
+zuul:
+  sensitive-headers: Cookie，Set-Cookie，Authorization
+  routes:
+    spring-cloud-client-server-a:
+      path: /client/**
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-A
+      sensitiveHeaders: Cookie，Set-Cookie，Authorization # 覆盖全局设置

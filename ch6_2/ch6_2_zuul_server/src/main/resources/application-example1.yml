@@ -1,6 +1,6 @@
 # 基本路由配置
 zuul:
   routes:
-    client-a:
+    serverA:
       path: /client/**
-      serverId: spring-cloud-client-server-a
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-A

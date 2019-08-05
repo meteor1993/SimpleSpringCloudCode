@@ -1,0 +1,10 @@
+# Ribbon请求重试配置
+zuul:
+  retryable: true
+  routes:
+    spring-cloud-client-server-a:
+      path: /client/**
+
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1

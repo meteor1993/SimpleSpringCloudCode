@@ -1,0 +1,10 @@
+# 路由屏蔽配置
+zuul:
+  ignored-services: spring-cloud-client-server-b
+  ignored-patterns: /**/hello/**
+  prefix: /pre
+  routes:
+    spring-cloud-client-server-a:
+      path: /client/**
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-A
+#      stripPrefix: false

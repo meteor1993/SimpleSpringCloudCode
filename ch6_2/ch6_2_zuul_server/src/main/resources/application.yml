@@ -4,7 +4,7 @@ spring:
   application:
     name: spring-cloud-zuul-server
   profiles:
-    active: example8
+    active: example1
 eureka:
   client:
     serviceUrl:

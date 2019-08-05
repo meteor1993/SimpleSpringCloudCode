@@ -1,0 +1,6 @@
+# 重定向配置配置
+zuul:
+  add-host-header: true
+  routes:
+    spring-cloud-client-server-a:
+      path: /client/**
