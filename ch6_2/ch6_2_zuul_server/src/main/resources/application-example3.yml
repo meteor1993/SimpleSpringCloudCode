@@ -1,0 +1,3 @@
+zuul:
+  routes:
+    spring-cloud-client-server-a:

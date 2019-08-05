@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    ribbon-route:
+      path: /ribbon/**
+      serviceId: ribbon-route
+
+ribbon:
+  eureka:
+    enabled: false  #禁止Ribbon使用Eureka
+
+ribbon-route:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule     #Ribbon LB Strategy
+    listOfServers: localhost:7070,localhost:7071     #client services for Ribbon LB

@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    client-a:
+      path: /client/**
+      serverId: http://localhost:8000/ # client-server-a 的地址

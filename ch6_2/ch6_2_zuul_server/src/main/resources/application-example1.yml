@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    client-a:
+      path: /client/**
+      serverId: spring-cloud-client-server-a
