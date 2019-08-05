@@ -1,3 +1,4 @@
+# 脱离Eureka使用Ribbon负载均衡
 zuul:
   routes:
     ribbon-route:
@@ -12,4 +13,4 @@ ribbon-route:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule     #Ribbon LB Strategy
-    listOfServers: localhost:7070,localhost:7071     #client services for Ribbon LB
+    listOfServers: localhost:8000,localhost:9000     #client services for Ribbon LB

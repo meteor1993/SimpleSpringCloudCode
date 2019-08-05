@@ -1,3 +1,4 @@
+# 路由简化配置
 zuul:
   routes:
     spring-cloud-client-server-a:

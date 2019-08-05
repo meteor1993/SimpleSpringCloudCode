@@ -1,0 +1,34 @@
+# 添加Hystrix熔断
+zuul:
+  routes:
+    ribbon-route:
+      path: /ribbon/**
+      serviceId: ribbon-route
+
+ribbon:
+  eureka:
+    enabled: false  #禁止Ribbon使用Eureka
+
+ribbon-route:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule     #Ribbon LB Strategy
+    listOfServers: localhost:8000,localhost:9000     #client services for Ribbon LB
+
+# 全局配置
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 5000
+
+# 单个服务配置
+hystrix:
+  command:
+    ribbon-route:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

@@ -1,3 +1,4 @@
+# 基本路由配置
 zuul:
   routes:
     client-a:

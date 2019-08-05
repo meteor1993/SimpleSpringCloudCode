@@ -1,0 +1,6 @@
+# forward路由配置
+zuul:
+  routes:
+    serverA:
+      path: /client/**
+      url: forward:/zuulHello

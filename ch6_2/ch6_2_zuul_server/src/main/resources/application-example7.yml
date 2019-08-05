@@ -1,0 +1,9 @@
+# 基本路由配置
+zuul:
+  routes:
+    serverA:
+      path: /client/**
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-A
+    serverB:
+      path: /client/**
+      serviceId: SPRING-CLOUD-CLIENT-SERVER-B
