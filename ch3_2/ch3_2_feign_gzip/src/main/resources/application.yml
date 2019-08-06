@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: spring-cloud-feign
+    name: spring-cloud-feign-gzip
 feign:
   compression:
     request:

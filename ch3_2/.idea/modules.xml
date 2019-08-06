@@ -3,8 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ch3_2.iml" filepath="$PROJECT_DIR$/ch3_2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_config/ch3_2_feign_config.iml" filepath="$PROJECT_DIR$/ch3_2_feign_config/ch3_2_feign_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_eureka/ch3_2_eureka.iml" filepath="$PROJECT_DIR$/ch3_2_eureka/ch3_2_eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_gzip/ch3_2_feign_gzip.iml" filepath="$PROJECT_DIR$/ch3_2_feign_gzip/ch3_2_feign_gzip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_httpclient/ch3_2_feign_httpclient.iml" filepath="$PROJECT_DIR$/ch3_2_feign_httpclient/ch3_2_feign_httpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_log/ch3_2_feign_log.iml" filepath="$PROJECT_DIR$/ch3_2_feign_log/ch3_2_feign_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_okhttp/ch3_2_feign_okhttp.iml" filepath="$PROJECT_DIR$/ch3_2_feign_okhttp/ch3_2_feign_okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_param_client/ch3_2_feign_param_client.iml" filepath="$PROJECT_DIR$/ch3_2_feign_param_client/ch3_2_feign_param_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3_2_feign_param_provider/ch3_2_feign_param_provider.iml" filepath="$PROJECT_DIR$/ch3_2_feign_param_provider/ch3_2_feign_param_provider.iml" />
     </modules>
   </component>
 </project>

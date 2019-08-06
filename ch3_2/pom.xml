@@ -11,6 +11,14 @@
     <modules>
         <module>ch3_2_feign_gzip</module>
         <module>ch3_2_feign_config</module>
+        <module>ch3_2_feign_log</module>
+        <module>ch3_2_feign_httpclient</module>
+        <module>ch3_2_feign_okhttp</module>
+        <module>ch3_2_eureka</module>
+        <module>ch3_2_feign_getpost_client</module>
+        <module>ch3_2_feign_getpost_provider</module>
+        <module>ch3_2_feign_param_provider</module>
+        <module>ch3_2_feign_param_client</module>
     </modules>
 
 
