@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch3_2_eureka" />
+        <module name="ch3_2_feign_filedownload_client" />
+        <module name="ch3_2_feign_filedownload_provider" />
+        <module name="ch3_2_feign_fileupload_client" />
+        <module name="ch3_2_feign_fileupload_provider" />
         <module name="ch3_2_feign_gzip" />
         <module name="ch3_2_feign_httpclient" />
         <module name="ch3_2_feign_log" />
@@ -19,6 +23,11 @@
       <module name="ch3_2" target="1.5" />
       <module name="ch3_2_eureka" target="1.8" />
       <module name="ch3_2_feign_config" target="1.8" />
+      <module name="ch3_2_feign_download_provider" target="1.8" />
+      <module name="ch3_2_feign_filedownload_client" target="1.8" />
+      <module name="ch3_2_feign_filedownload_provider" target="1.8" />
+      <module name="ch3_2_feign_fileupload_client" target="1.8" />
+      <module name="ch3_2_feign_fileupload_provider" target="1.8" />
       <module name="ch3_2_feign_getpost_client" target="1.8" />
       <module name="ch3_2_feign_getpost_provider" target="1.8" />
       <module name="ch3_2_feign_gzip" target="1.8" />

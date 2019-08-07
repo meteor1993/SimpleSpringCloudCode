@@ -19,6 +19,11 @@
         <module>ch3_2_feign_getpost_provider</module>
         <module>ch3_2_feign_param_provider</module>
         <module>ch3_2_feign_param_client</module>
+        <module>ch3_2_feign_fileupload_provider</module>
+        <module>ch3_2_feign_fileupload_client</module>
+        <module>ch3_2_feign_download_provider</module>
+        <module>ch3_2_feign_filedownload_provider</module>
+        <module>ch3_2_feign_filedownload_client</module>
     </modules>
 
 

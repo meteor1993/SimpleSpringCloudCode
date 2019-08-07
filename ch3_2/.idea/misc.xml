@@ -3,6 +3,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_eureka" />
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_config" />
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_download_provider" />
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_filedownload_client" />
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_filedownload_provider" />
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_fileupload_client" />
+    <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_fileupload_provider" />
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_getpost_client" />
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_getpost_provider" />
     <file type="web" url="file://$PROJECT_DIR$/ch3_2_feign_gzip" />
@@ -19,6 +24,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/ch3_2_feign_config/pom.xml" />
+        <option value="$PROJECT_DIR$/ch3_2_feign_download_provider/pom.xml" />
         <option value="$PROJECT_DIR$/ch3_2_feign_getpost_client/pom.xml" />
         <option value="$PROJECT_DIR$/ch3_2_feign_getpost_provider/pom.xml" />
       </set>
