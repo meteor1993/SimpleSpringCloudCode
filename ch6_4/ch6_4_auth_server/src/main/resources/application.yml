@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cloud-auth-server
+server:
+  port: 8888
+  servlet:
+    contextPath: /auth #web»ùÂ·¾¶
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
