@@ -18,10 +18,8 @@ import java.util.UUID;
 public class FileController {
 
     @RequestMapping(value = "/uploadfile", method = RequestMethod.POST, produces = {MediaType.APPLICATION_JSON_UTF8_VALUE}, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public String uploadFile(@RequestPart(value = "file")MultipartFile file, @RequestParam(value = "/fileType") String fileType, HttpServletRequest request, HttpServletResponse response){
-        long size = file.getSize();
-        String contentType = file.getContentType();
-        String name = file.getName();
+    public String uploadFile(@RequestPart(value = "file")MultipartFile file){
+
         String orgFileName = file.getOriginalFilename();
 
         //后缀

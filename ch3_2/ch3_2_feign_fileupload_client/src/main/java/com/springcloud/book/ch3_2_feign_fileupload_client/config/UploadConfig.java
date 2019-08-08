@@ -27,4 +27,5 @@ public class UploadConfig {
     public Encoder feignEncoder(){
         return new SpringFormEncoder(new SpringEncoder(messageConverters));
     }
+
 }

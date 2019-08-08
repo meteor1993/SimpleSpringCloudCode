@@ -15,5 +15,5 @@ import org.springframework.web.multipart.MultipartFile;
 public interface UploadService {
 
     @RequestMapping(value = "/file/uploadfile", method = RequestMethod.POST, produces = {MediaType.APPLICATION_JSON_UTF8_VALUE}, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    String uplodFile(@RequestPart(value = "file")MultipartFile file, @RequestParam(value = "/fileType") String fileType);
+    String uplodFile(@RequestPart(value = "file")MultipartFile file);
 }

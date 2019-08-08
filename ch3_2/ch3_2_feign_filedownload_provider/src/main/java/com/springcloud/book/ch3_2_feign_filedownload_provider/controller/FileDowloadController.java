@@ -18,7 +18,7 @@ import java.net.URLEncoder;
 public class FileDowloadController {
 
     @RequestMapping(value = "/download")
-    public ResponseEntity<byte[]> downloadFile(String fileType, HttpServletRequest request){
+    public ResponseEntity<byte[]> downloadFile(HttpServletRequest request){
 
         HttpHeaders headers = new HttpHeaders();
         ResponseEntity<byte[]> entity = null;

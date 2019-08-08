@@ -22,7 +22,7 @@ public class UploadController {
     private UploadService uploadService;
 
     @RequestMapping(value = "/file")
-    public Object uploadFile(@RequestPart(value = "file")MultipartFile file, String fileType, HttpServletRequest request, HttpServletResponse response){
-        return uploadService.uplodFile(file,fileType);
+    public Object uploadFile(@RequestPart(value = "file")MultipartFile file){
+        return uploadService.uplodFile(file);
     }
 }

@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface DownloadService {
 
     @RequestMapping(value = "/file/download")
-    ResponseEntity<byte[]> downloadFile(@RequestParam(value = "fileType") String fileType);
+    ResponseEntity<byte[]> downloadFile();
 }

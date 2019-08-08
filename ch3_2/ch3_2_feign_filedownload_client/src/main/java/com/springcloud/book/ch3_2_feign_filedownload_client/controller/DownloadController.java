@@ -22,9 +22,8 @@ public class DownloadController {
 
     @ResponseBody
     @RequestMapping("/file")
-    public Object file(HttpServletRequest request, HttpServletResponse response,
-                                     String fileType) {
-        ResponseEntity<byte[]> entity = downloadService.downloadFile(fileType);
+    public Object file() {
+        ResponseEntity<byte[]> entity = downloadService.downloadFile();
         return entity;
     }
 }
