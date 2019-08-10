@@ -1,0 +1,48 @@
+server:
+  port: 8000
+spring:
+  profiles: node1
+  application:
+    name: spring-cloud-client-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      mark: running
+
+---
+
+server:
+  port: 8001
+spring:
+  profiles: node2
+  application:
+    name: spring-cloud-client-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      mark: running
+
+---
+
+server:
+  port: 8002
+spring:
+  profiles: node3
+  application:
+    name: spring-cloud-client-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      mark: gray
