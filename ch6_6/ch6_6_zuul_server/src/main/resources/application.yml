@@ -15,7 +15,6 @@ spring:
     username: root
     password: wsy@123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # 使用HikariCP数据源
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       auto-commit: true
