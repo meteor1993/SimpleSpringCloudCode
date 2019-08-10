@@ -30,6 +30,10 @@
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.marcosbarbero.cloud</groupId>
             <artifactId>spring-cloud-zuul-ratelimit</artifactId>
             <version>2.2.4.RELEASE</version>

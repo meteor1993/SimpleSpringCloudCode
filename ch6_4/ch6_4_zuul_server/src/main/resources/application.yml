@@ -24,3 +24,5 @@ security:
     resource:
       jwt:
         key-value: springcloud #使用对称加密方式，默认算法为HS256
+      user-info-uri: http://localhost:8888/auth
+      prefer-token-info: false
