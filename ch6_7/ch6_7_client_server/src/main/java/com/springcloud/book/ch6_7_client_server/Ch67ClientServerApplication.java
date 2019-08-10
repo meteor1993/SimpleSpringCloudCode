@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class Ch67ClientServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Ch67ClientServerApplication.class, args);
+        SpringApplication.run(Ch67ClientServerApplication.class, "--spring.profiles.active=node1");
     }
 
 }
