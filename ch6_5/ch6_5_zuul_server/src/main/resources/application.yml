@@ -4,8 +4,8 @@ spring:
   application:
     name: spring-cloud-zuul-server
   redis:
-    host: 101.132.124.125
-    password: wsy@123456
+    host: 192.168.0.12
+    password: 123456
 eureka:
   client:
     serviceUrl:
