@@ -1,0 +1,13 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: spring-cloud-hystrix-dashboard
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+turbine:
+  appConfig: spring-cloud-data-service,spring-cloud-user-service,spring-cloud-zuul-server
+  clusterNameExpression: "'default'"
