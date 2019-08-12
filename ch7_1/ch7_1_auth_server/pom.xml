@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch7_1_user_service</artifactId>
+    <artifactId>ch7_1_auth_server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch7_1_user_service</name>
-    <description>ch7_1_user_service</description>
+    <name>ch7_1_auth_server</name>
+    <description>ch7_1_auth_server</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -33,6 +33,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
         <!-- okhttp -->
         <dependency>
             <groupId>io.github.openfeign</groupId>
@@ -50,8 +55,6 @@
             <artifactId>java-jwt</artifactId>
             <version>3.8.1</version>
         </dependency>
-
-
     </dependencies>
 
     <build>

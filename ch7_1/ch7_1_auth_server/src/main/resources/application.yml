@@ -1,8 +1,8 @@
 server:
-  port: 8000
+  port: 6000
 spring:
   application:
-    name: spring-cloud-user-service
+    name: spring-cloud-auth-service
 eureka:
   client:
     serviceUrl:

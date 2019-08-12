@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>ch7_1_auth_server</module>
         <module>ch7_1_common</module>
         <module>ch7_1_data_service</module>
         <module>ch7_1_eureka_server</module>

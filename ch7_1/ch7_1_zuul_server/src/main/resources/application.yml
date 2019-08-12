@@ -10,21 +10,10 @@ eureka:
   instance:
     prefer-ip-address: true
 zuul:
-  ribbonIsolationStrategy: THREAD
-    threadPool:
-      useSeparateThreadPools: true
-      threadPoolKeyPrefix: zuulgateway
-    max:
-      host:
-        max-per-route-connections: 200
-        max-total-connections: 500
-    host:
-      socket-timeout-millis: 5000
-      connect-timeout-millis: 10000
   routes:
     spring-cloud-client-server:
-      path: /client/**
-      serviceId: spring-cloud-client-server
+      path: /user/**
+      serviceId: spring-cloud-user-service
 management:
   endpoints:
     web:
