@@ -3,6 +3,7 @@ package com.springcloud.book.ch7_1_user_service.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
+import com.springcloud.book.ch7_1_common.util.JWTUtil;
 import com.springcloud.book.ch7_1_common.vo.CommonJson;
 import com.springcloud.book.ch7_1_common.vo.UserInfoModel;
 import com.springcloud.book.ch7_1_user_service.service.UserService;
@@ -24,10 +25,10 @@ public class UserServiceI implements UserService {
     UserDataRemote userDataRemote;
 
     @Override
-    public CommonJson getUserInfo(String userId) {
+    public CommonJson getUserInfo(String token) {
         CommonJson json = new CommonJson();
 
-        UserInfoModel userInfoModel = JSON.parseObject(userDataRemote.getUserInfo(userId), UserInfoModel.class);
+        UserInfoModel userInfoModel = JSON.parseObject(userDataRemote.getUserInfo(JWTUtil.getUserId(token)), UserInfoModel.class);
 
         Map<String, Object> data = Maps.newHashMap();
         data.put("userInfo", userInfoModel);

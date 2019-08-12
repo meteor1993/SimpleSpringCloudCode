@@ -47,7 +47,7 @@ public class AuthFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
 
-        String token = request.getHeader("Authorization");
+        String token = request.getHeader("token");
         if (StringUtils.isEmpty(token)) {
             // 如果token不存在
             HttpServletResponse response = context.getResponse();

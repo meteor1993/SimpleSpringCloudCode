@@ -51,9 +51,9 @@ public class JWTUtil {
     }
 
     /**
-     * 从token获取username
+     * 从token获取userId
      */
-    public static String getUsername(String token){
+    public static String getUserId(String token){
         try{
             return JWT.decode(token).getClaim("userId").asString();
         }catch(Exception ex){
