@@ -13,6 +13,4 @@ import java.util.List;
  */
 public interface UserInfoRepository extends PagingAndSortingRepository<UserInfoModel, Long>, JpaSpecificationExecutor<UserInfoModel> {
     UserInfoModel getByUserLoginId(String userLoginId);
-
-    List<UserInfoModel> findAll();
 }

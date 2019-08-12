@@ -35,9 +35,4 @@ public class UserController {
     public String getUserInfo(@RequestParam String userLoginId) {
         return JSONObject.toJSONString(userInfoRepository.getByUserLoginId(userLoginId));
     }
-
-    @PostMapping("/getAllUserInfo")
-    public String getAllUserInfo() {
-        return JSONArray.toJSONString(userInfoRepository.findAll());
-    }
 }

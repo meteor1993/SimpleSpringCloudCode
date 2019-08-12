@@ -1,10 +1,9 @@
 package com.springcloud.book.ch7_1_user_service.controller;
 
+import com.springcloud.book.ch7_1_common.vo.CommonJson;
 import com.springcloud.book.ch7_1_user_service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Date: 2019/8/12 14:09
@@ -17,13 +16,9 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/login")
-    public String login(@RequestParam String loginName, @RequestParam String password) {
-        return userService.login(loginName, password);
-    }
-
-    @PostMapping("/getAllUserInfo")
-    public String getAllUserInfo() {
-        return userService.getAllUserInfo();
+    @GetMapping("/getUserInfo")
+    @ResponseBody
+    public CommonJson getUserInfo(@RequestParam String userId) {
+        return userService.getUserInfo(userId);
     }
 }

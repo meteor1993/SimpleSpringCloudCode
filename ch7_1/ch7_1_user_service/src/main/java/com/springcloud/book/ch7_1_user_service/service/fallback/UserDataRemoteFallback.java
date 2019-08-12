@@ -11,17 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserDataRemoteFallback implements UserDataRemote {
     @Override
-    public String login(String loginName, String password) {
-        return "login failed";
-    }
-
-    @Override
     public String getUserInfo(String userLoginId) {
         return "getUserInfo failed";
     }
 
-    @Override
-    public String getAllUserInfo() {
-        return "getAllUserInfo failed";
-    }
 }

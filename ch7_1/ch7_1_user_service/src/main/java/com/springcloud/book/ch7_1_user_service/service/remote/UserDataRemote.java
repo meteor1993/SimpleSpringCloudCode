@@ -12,12 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @FeignClient(name = "spring-cloud-data-service", fallback= UserDataRemoteFallback.class)
 public interface UserDataRemote {
-    @PostMapping("/login")
-    String login(@RequestParam(value = "loginName") String loginName, @RequestParam(value = "password") String password);
-
     @PostMapping("/getUserInfo")
     String getUserInfo(@RequestParam(value = "userLoginId") String userLoginId);
-
-    @PostMapping("/getAllUserInfo")
-    String getAllUserInfo();
 }

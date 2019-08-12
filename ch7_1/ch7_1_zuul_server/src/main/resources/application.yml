@@ -14,6 +14,10 @@ zuul:
     spring-cloud-client-server:
       path: /user/**
       serviceId: spring-cloud-user-service
+    spring-cloud-auth-service:
+      path: /auth/**
+      serviceId: spring-cloud-auth-service
+  add-host-header: true
 management:
   endpoints:
     web:

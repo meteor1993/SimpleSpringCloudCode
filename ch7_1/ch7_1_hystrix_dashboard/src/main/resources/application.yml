@@ -9,5 +9,5 @@ management:
       exposure:
         include: hystrix.stream
 turbine:
-  appConfig: spring-cloud-data-service,spring-cloud-user-service,spring-cloud-zuul-server
+  appConfig: spring-cloud-data-service,spring-cloud-user-service,spring-cloud-zuul-server,spring-cloud-auth-service
   clusterNameExpression: "'default'"

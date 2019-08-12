@@ -1,4 +1,4 @@
-package com.springcloud.book.ch7_1_auth_server.util;
+package com.springcloud.book.ch7_1_common.util;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -12,7 +12,7 @@ import java.util.Date;
  * @Desc:
  */
 public class JWTUtil {
-    public static final String SECRET_KEY = "123456"; //秘钥
+    public static final String SECRET_KEY = "springcloud"; //秘钥
     public static final long TOKEN_EXPIRE_TIME = 5 * 60 * 1000; //token过期时间
     public static final long REFRESH_TOKEN_EXPIRE_TIME = 10 * 60 * 1000; //refreshToken过期时间
     private static final String ISSUER = "issuer"; //签发人
@@ -20,7 +20,7 @@ public class JWTUtil {
     /**
      * 生成签名
      */
-    public static String generateToken(String username){
+    public static String generateToken(String userId){
         Date now = new Date();
         Algorithm algorithm = Algorithm.HMAC256(SECRET_KEY); //算法
 
@@ -28,7 +28,7 @@ public class JWTUtil {
                 .withIssuer(ISSUER) //签发人
                 .withIssuedAt(now) //签发时间
                 .withExpiresAt(new Date(now.getTime() + TOKEN_EXPIRE_TIME)) //过期时间
-                .withClaim("username", username) //保存身份标识
+                .withClaim("userId", userId) //保存身份标识
                 .sign(algorithm);
         return token;
     }
@@ -55,7 +55,7 @@ public class JWTUtil {
      */
     public static String getUsername(String token){
         try{
-            return JWT.decode(token).getClaim("username").asString();
+            return JWT.decode(token).getClaim("userId").asString();
         }catch(Exception ex){
             ex.printStackTrace();
         }

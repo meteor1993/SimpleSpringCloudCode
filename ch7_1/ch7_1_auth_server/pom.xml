@@ -22,6 +22,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.springcloud.book</groupId>
+            <artifactId>ch7_1_common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
@@ -48,12 +53,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.59</version>
-        </dependency>
-        <!-- jwt -->
-        <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>java-jwt</artifactId>
-            <version>3.8.1</version>
         </dependency>
     </dependencies>
 
