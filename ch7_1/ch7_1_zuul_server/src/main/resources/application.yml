@@ -17,6 +17,10 @@ zuul:
     spring-cloud-auth-service:
       path: /auth/**
       serviceId: spring-cloud-auth-service
+  sensitive-headers: token
+  ribbon:
+    eager-load:
+      enabled: true
 management:
   endpoints:
     web:

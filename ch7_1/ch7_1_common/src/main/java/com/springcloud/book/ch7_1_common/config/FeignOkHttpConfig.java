@@ -1,4 +1,4 @@
-package com.springcloud.book.ch7_1_user_service.config;
+package com.springcloud.book.ch7_1_common.config;
 
 import feign.Feign;
 import okhttp3.ConnectionPool;
@@ -15,9 +15,9 @@ import java.util.concurrent.TimeUnit;
  * @Version: 1.0
  * @Desc:
  */
-//@Configuration
-//@ConditionalOnClass(Feign.class)
-//@AutoConfigureBefore(FeignAutoConfiguration.class)
+@Configuration
+@ConditionalOnClass(Feign.class)
+@AutoConfigureBefore(FeignAutoConfiguration.class)
 public class FeignOkHttpConfig {
     @Bean
     public okhttp3.OkHttpClient okHttpClient(){

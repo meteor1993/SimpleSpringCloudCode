@@ -1,5 +1,6 @@
 package com.springcloud.book.ch7_1_user_service.controller;
 
+import com.springcloud.book.ch7_1_common.context.UserContextHolder;
 import com.springcloud.book.ch7_1_common.vo.CommonJson;
 import com.springcloud.book.ch7_1_user_service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +19,9 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/getUserInfo")
+    @GetMapping("/api/getUserInfo")
     @ResponseBody
-    public CommonJson getUserInfo(HttpServletRequest request) {
-        return userService.getUserInfo(request.getHeader("token"));
+    public CommonJson getUserInfo() {
+        return userService.getUserInfo(UserContextHolder.get());
     }
 }

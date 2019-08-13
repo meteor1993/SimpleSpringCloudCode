@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.springcloud.book.ch7_1_common.config.CommonConfig

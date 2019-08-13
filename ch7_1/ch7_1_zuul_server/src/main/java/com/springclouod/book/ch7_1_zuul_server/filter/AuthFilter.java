@@ -47,7 +47,7 @@ public class AuthFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
 
-        String token = request.getHeader("token");
+        String token = request.getHeader("Authorization");
         if (StringUtils.isEmpty(token)) {
             // 如果token不存在
             HttpServletResponse response = context.getResponse();
@@ -64,6 +64,8 @@ public class AuthFilter extends ZuulFilter {
                 context.setSendZuulResponse(false);
                 context.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
                 context.setResponse(response);
+            } else {
+                context.addZuulRequestHeader("x-customs-Authorization", token);
             }
         }
 
