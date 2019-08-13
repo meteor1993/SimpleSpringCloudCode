@@ -13,13 +13,13 @@ public class Ch93GatewayRouteForwardApplication {
 		SpringApplication.run(Ch93GatewayRouteForwardApplication.class, args);
 	}
 
-//	@Bean
-//	public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
-//		return builder.routes()
-//				.route("path_route", r -> r.path("/dxy3377")
-//						.uri("https://github.com"))
-//				.build();
-//	}
+	@Bean
+	public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
+		return builder.routes()
+				.route("path_route", r -> r.path("/spring-cloud")
+						.uri("https://github.com"))
+				.build();
+	}
 
 
 }
