@@ -4,6 +4,7 @@ import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @Date: 2019/8/12 9:35
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "user_info")
 @Data
-public class UserInfoModel {
+public class UserInfoModel implements Serializable {
     @Id
     @GeneratedValue(generator = "paymentableGenerator")
     @GenericGenerator(name = "paymentableGenerator", strategy = "uuid")

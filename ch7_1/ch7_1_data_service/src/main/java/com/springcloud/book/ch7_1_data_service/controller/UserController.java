@@ -7,6 +7,7 @@ import com.springcloud.book.ch7_1_data_service.model.UserLoginModel;
 import com.springcloud.book.ch7_1_data_service.repository.UserInfoRepository;
 import com.springcloud.book.ch7_1_data_service.repository.UserLoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,6 +33,7 @@ public class UserController {
     }
 
     @PostMapping("/getUserInfo")
+    @Cacheable(value = "user", key = "targetClass + methodName +#p0")
     public String getUserInfo(@RequestParam String userLoginId) {
         return JSONObject.toJSONString(userInfoRepository.getByUserLoginId(userLoginId));
     }
