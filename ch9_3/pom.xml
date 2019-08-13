@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ch9_3_gateway_route_forward</module>
+        <module>ch9_3_eureka_server</module>
+        <module>ch9_3_gateway_provider</module>
+        <module>ch9_3_gateway_client</module>
+        <module>ch9_3_gateway_eureka</module>
     </modules>
 
 
