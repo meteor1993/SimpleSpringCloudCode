@@ -21,6 +21,15 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
+  host:
+    max-per-route-connections: 50
+    max-total-connections: 300
+    socket-timeout-millis: 5000
+    connect-timeout-millis: 5000
+  ribbon-isolation-strategy: thread
+  thread-pool:
+    use-separate-thread-pools: true
+    thread-pool-key-prefix: zuul-gateway
 management:
   endpoints:
     web:
