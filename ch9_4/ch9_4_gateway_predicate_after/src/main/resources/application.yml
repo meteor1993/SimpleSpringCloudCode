@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-predicate-after
+  cloud:
+    gateway:
+      routes:
+      - id: after_route
+        uri: https://github.com
+        predicates:
+        - After=2019-08-14T10:25:00+08:00[Asia/Shanghai]
