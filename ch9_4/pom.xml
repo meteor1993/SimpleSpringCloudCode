@@ -18,6 +18,8 @@
         <module>ch9_4_gateway_predicate_method</module>
         <module>ch9_4_gateway_predicate_query</module>
         <module>ch9_4_gateway_predicate_remoteaddr</module>
+        <module>ch9_4_gateway_predicate_path</module>
+        <module>ch9_4_gateway_predicate_weight</module>
     </modules>
 
 
