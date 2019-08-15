@@ -1,0 +1,3 @@
+springcloud:
+  config:
+    dev: hello, i am dev
