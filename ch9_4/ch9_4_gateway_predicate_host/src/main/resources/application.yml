@@ -9,4 +9,4 @@ spring:
       - id: host_route
         uri: https://github.com
         predicates:
-        - Host=**.github.com
+        - Host=**.alpaca.com:${server.port}

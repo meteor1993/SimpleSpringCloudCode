@@ -9,4 +9,4 @@ spring:
       - id: remoteaddr_route
         uri: https://github.com
         predicates:
-        - RemoteAddr=127.0.0.1
+        - RemoteAddr=192.168.1.1

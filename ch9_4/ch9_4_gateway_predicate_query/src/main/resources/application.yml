@@ -9,7 +9,7 @@ spring:
       - id: query_route
         uri: https://github.com
         predicates:
-        - Query=name
-#        - Query=name, a.
+#        - Query=name
+        - Query=name, a.
 
 
