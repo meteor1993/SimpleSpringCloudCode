@@ -15,6 +15,10 @@
     <description>ch8_1</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>ch8_1_config_server</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
