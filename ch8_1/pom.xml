@@ -17,6 +17,7 @@
 
     <modules>
         <module>ch8_1_config_server</module>
+        <module>ch8_1_config_client</module>
     </modules>
 
     <properties>
