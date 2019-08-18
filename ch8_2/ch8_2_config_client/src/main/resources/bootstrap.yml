@@ -1,0 +1,33 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    # 开启消息跟踪
+    bus:
+      trace:
+        enabled: true
+    config:
+      discovery:
+        enabled: true
+        serviceId: spring-cloud-config-server
+      label: master
+      name: springcloud-config
+      profile: dev
+  rabbitmq:
+    host: 101.132.124.125
+    password: wsy@123456
+    port: 5672
+    username: admin
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

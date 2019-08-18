@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/meteor1993/SimpleSpringCloudCode.git # git仓库的地址
+          search-paths: ch8_1/configFile  # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: #Git仓库用户名
+          password: #Git仓库密码
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 101.132.124.125
+    port: 5672
+    username: admin
+    password: wsy@123456
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
