@@ -19,6 +19,8 @@
         <module>ch8_1_config_server</module>
         <module>ch8_1_config_client</module>
         <module>ch8_1_config_client_refresh</module>
+        <module>ch8_1_eureka_server</module>
+        <module>ch8_1_config_client_eureka</module>
     </modules>
 
     <properties>

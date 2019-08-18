@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: spring-cloud-config-client-eureka
+  cloud:
+    config:
+      label: master
+      name: springcloud-config
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-server-eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
