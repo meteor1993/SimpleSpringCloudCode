@@ -11,6 +11,7 @@
     <modules>
         <module>ch9_5_gateway_filter_addrequestheader</module>
         <module>ch9_5_gateway_filter_service</module>
+        <module>ch9_5_gateway_filter_addrequestparameter</module>
     </modules>
 
 

@@ -18,4 +18,10 @@ public class HelloController {
         return "addRequestHeader-------------------------header:"+header;
     }
 
+    @RequestMapping("/addRequestParameter")
+    public String addRequestParameter(HttpServletRequest request){
+        String name = request.getParameter("name");
+        return "addRequestParameter-------------------------name:"+name;
+    }
+
 }
