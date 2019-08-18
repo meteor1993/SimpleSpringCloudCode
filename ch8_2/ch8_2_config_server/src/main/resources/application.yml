@@ -7,18 +7,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/meteor1993/SimpleSpringCloudCode.git # git²Ö¿âµÄµØÖ·
-          search-paths: ch8_1/configFile  # git²Ö¿âµØÖ·ÏÂµÄÏà¶ÔµØÖ·£¬¿ÉÒÔÅäÖÃ¶à¸ö£¬ÓÃ,·Ö¸î¡£
-          username: #Git²Ö¿âÓÃ»§Ãû
-          password: #Git²Ö¿âÃÜÂë
+          uri: https://github.com/meteor1993/SimpleSpringCloudCode.git # gitä»“åº“çš„åœ°å€
+          search-paths: ch8_1/configFile  # gitä»“åº“åœ°å€ä¸‹çš„ç›¸å¯¹åœ°å€ï¼Œå¯ä»¥é…ç½®å¤šä¸ªï¼Œç”¨,åˆ†å‰²ã€‚
+          username: #Gitä»“åº“ç”¨æˆ·å
+          password: #Gitä»“åº“å¯†ç 
     bus:
       trace:
         enabled: true
   rabbitmq:
-    host: 101.132.124.125
+    host: 192.168.0.12
     port: 5672
     username: admin
-    password: wsy@123456
+    password: 123456
 management:
   endpoints:
     web:

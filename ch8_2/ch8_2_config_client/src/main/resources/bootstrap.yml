@@ -16,8 +16,8 @@ spring:
       name: springcloud-config
       profile: dev
   rabbitmq:
-    host: 101.132.124.125
-    password: wsy@123456
+    host: 192.168.0.12
+    password: 123456
     port: 5672
     username: admin
 eureka:
