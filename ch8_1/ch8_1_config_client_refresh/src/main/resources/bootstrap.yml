@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:8080
+      name: springcloud-config
+      profile: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

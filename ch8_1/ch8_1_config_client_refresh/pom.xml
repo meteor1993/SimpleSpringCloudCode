@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch8_1_config_client</artifactId>
+    <artifactId>ch8_1_config_client_refresh</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch8_1_config_client</name>
-    <description>ch8_1_config_client</description>
+    <name>ch8_1_config_client_refresh</name>
+    <description>ch8_1_config_client_refresh</description>
     <packaging>jar</packaging>
 
     <properties>
