@@ -1,0 +1,11 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: spring-cloud-client-mysql
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:8080
+      name: springcloud-config
+      profile: dev
