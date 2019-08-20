@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch8_4_config_apollo</artifactId>
+    <artifactId>ch8_4_zuul_apollo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch8_4_config_apollo</name>
-    <description>ch8_4_config_apollo</description>
+    <name>ch8_4_zuul_apollo</name>
+    <description>ch8_4_zuul_apollo</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -28,10 +28,13 @@
             <artifactId>apollo-client</artifactId>
             <version>${apollo-client.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
     </dependencies>
 
