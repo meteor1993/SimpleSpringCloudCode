@@ -1,20 +1,4 @@
-server:
-  port: 9090
-spring:
-  application:
-    name: spring-cloud-config-apollo
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://139.155.11.128:8080/eureka/
-  instance:
-    prefer-ip-address: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-App:
-  Id: 123456789
 apollo:
-  Meta: http://139.155.11.128:8080
+  bootstrap:
+    enabled: true
+  Meta: http://localhost:8080
