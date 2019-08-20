@@ -2,11 +2,11 @@ server:
   port: 8080
 spring:
   application:
-    name: spring-cloud-gateway-filter-addrequest
+    name: spring-cloud-gateway-filter-addrequestparameter
   cloud:
     gateway:
       routes:
-      - id: addrequest_filter
+      - id: addrequestparameter_filter
         uri: http://localhost:8081
         predicates:
         - Path= /hello/{segment}

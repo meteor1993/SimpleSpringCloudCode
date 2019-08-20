@@ -12,6 +12,12 @@
         <module>ch9_5_gateway_filter_addrequestheader</module>
         <module>ch9_5_gateway_filter_service</module>
         <module>ch9_5_gateway_filter_addrequestparameter</module>
+        <module>ch9_5_gateway_filter_addresponseheader</module>
+        <module>ch9_5_gateway_filter_hystrix</module>
+        <module>ch9_5_gateway_filter_rewritepath</module>
+        <module>ch9_5_gateway_filter_stripprefix</module>
+        <module>ch9_5_gateway_filter_prefixpath</module>
+        <module>ch9_5_gateway_filter_retry</module>
     </modules>
 
 

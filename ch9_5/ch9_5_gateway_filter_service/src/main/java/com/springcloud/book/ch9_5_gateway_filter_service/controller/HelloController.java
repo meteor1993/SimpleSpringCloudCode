@@ -24,4 +24,19 @@ public class HelloController {
         return "addRequestParameter-------------------------name:"+name;
     }
 
+    @RequestMapping("/hystrix")
+    public String hystrix(HttpServletRequest request){
+        return "hystrix-------------------------success";
+    }
+
+    @RequestMapping("/prefixPath")
+    public String prefixPath(HttpServletRequest request){
+        return "prefixPath-------------------------success";
+    }
+
+    @RequestMapping("/retry")
+    public String retry(HttpServletRequest request){
+        return "retry-------------------------success";
+    }
+
 }
