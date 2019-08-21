@@ -1,0 +1,33 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-filter-prefixpath
+  cloud:
+      gateway:
+        routes:
+          # 路由到本机的9000端口上
+        - id: hello_route
+          uri: http://localhost:9000
+          predicates:
+          - Path=/hello/**
+          filters:
+          - StripPrefix=1
+          # 集成eureka注册中心的配置示例
+        - id: hello_ribbon_route
+          uri: lb://spring-cloud-gateway-provider
+          predicates:
+          - Path=/provider/**
+          filters:
+          - StripPrefix=1
+          # 路由到百度页面
+        - id: baidu_route
+          uri: http://www.baidu.com
+          predicates:
+          - Path=/baidu/**
+          filters:
+          - StripPrefix=1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/

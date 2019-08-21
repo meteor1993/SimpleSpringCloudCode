@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch9_6.iml" filepath="$PROJECT_DIR$/ch9_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch9_6_gateway_globalfilter_eureka/ch9_6_gateway_globalfilter_eureka.iml" filepath="$PROJECT_DIR$/ch9_6_gateway_globalfilter_eureka/ch9_6_gateway_globalfilter_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch9_6_gateway_globalfilter_loadbalancer/ch9_6_gateway_globalfilter_loadbalancer.iml" filepath="$PROJECT_DIR$/ch9_6_gateway_globalfilter_loadbalancer/ch9_6_gateway_globalfilter_loadbalancer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch9_6_gateway_globalfilter_provider/ch9_6_gateway_globalfilter_provider.iml" filepath="$PROJECT_DIR$/ch9_6_gateway_globalfilter_provider/ch9_6_gateway_globalfilter_provider.iml" />
+    </modules>
+  </component>
+</project>

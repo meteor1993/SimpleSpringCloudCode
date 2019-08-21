@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch9_6_gateway_globalfilter_loadbalancer:war">
+    <output-path>$PROJECT_DIR$/ch9_6_gateway_globalfilter_loadbalancer/target</output-path>
+    <root id="archive" name="ch9_6_gateway_globalfilter_loadbalancer.war">
+      <element id="artifact" artifact-name="ch9_6_gateway_globalfilter_loadbalancer:war exploded" />
+    </root>
+  </artifact>
+</component>
