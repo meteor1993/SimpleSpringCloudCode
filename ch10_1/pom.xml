@@ -9,15 +9,15 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springcloud.book</groupId>
-    <artifactId>ch8_4</artifactId>
+    <artifactId>ch10_1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch8_4</name>
-    <description>ch8_4</description>
+    <name>ch10_1</name>
+    <description>ch10_1</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>ch8_4_config_apollo</module>
-        <module>ch8_4_zuul_apollo</module>
+        <module>ch10_1_sleuth_consumer</module>
+        <module>ch10_1_sleuth_provider</module>
     </modules>
 
     <properties>
@@ -47,6 +47,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
 
         <dependency>
