@@ -4,13 +4,15 @@ spring:
   application:
     name: spring-cloud-provider-server
   rabbitmq:
-    host: localhost
-    port: 5679
+    host: host
+    port: 5672
     username: username
     password: password
   sleuth:
     sampler:
       probability: 1.0
+  zipkin:
+    enabled: true
 eureka:
   client:
     serviceUrl:
