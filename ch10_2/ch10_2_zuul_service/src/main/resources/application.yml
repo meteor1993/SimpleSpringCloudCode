@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-zuul-server
+  rabbitmq:
+    host: localhost
+    port: 5679
+    username: username
+    password: password
+  sleuth:
+    sampler:
+      probability: 1.0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+  routes:
+    spring-cloud-consumer-server:
+      path: /client/**
+      serviceId: spring-cloud-consumer-server
