@@ -17,6 +17,7 @@
 
     <modules>
         <module>ch11_1_provider_server</module>
+        <module>ch11_1_consumer_server</module>
     </modules>
 
     <properties>
