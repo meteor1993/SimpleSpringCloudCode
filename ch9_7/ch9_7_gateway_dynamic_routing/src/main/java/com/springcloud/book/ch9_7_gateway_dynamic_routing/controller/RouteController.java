@@ -56,9 +56,9 @@ public class RouteController {
 
         // Predicates
         List<PredicateDefinition> pdList = new ArrayList<>();
-        for (PredicateEntity predicateEntity: routeEntity.getPredicateEntityList()) {
+        for (PredicateEntity predicateEntity: routeEntity.getPredicates()) {
             PredicateDefinition predicateDefinition = new PredicateDefinition();
-            predicateDefinition.setArgs(predicateEntity.getMap());
+            predicateDefinition.setArgs(predicateEntity.getArgs());
             predicateDefinition.setName(predicateEntity.getName());
             pdList.add(predicateDefinition);
         }
@@ -66,9 +66,9 @@ public class RouteController {
 
         // Filters
         List<FilterDefinition> fdList = new ArrayList<>();
-        for (FilterEntity filterEntity: routeEntity.getFilterEntityList()) {
+        for (FilterEntity filterEntity: routeEntity.getFilters()) {
             FilterDefinition filterDefinition = new FilterDefinition();
-            filterDefinition.setArgs(filterEntity.getMap());
+            filterDefinition.setArgs(filterEntity.getArgs());
             filterDefinition.setName(filterEntity.getName());
             fdList.add(filterDefinition);
         }

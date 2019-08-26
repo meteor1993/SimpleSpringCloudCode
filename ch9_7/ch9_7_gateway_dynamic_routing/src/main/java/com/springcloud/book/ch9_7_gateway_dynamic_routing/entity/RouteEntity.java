@@ -14,10 +14,10 @@ public class RouteEntity {
     private String id;
 
     //路由断言集合
-    private List<PredicateEntity> predicateEntityList = new ArrayList<>();
+    private List<PredicateEntity> predicates = new ArrayList<>();
 
     //路由过滤器集合
-    private List<FilterEntity> filterEntityList = new ArrayList<>();
+    private List<FilterEntity> filters = new ArrayList<>();
 
     //路由转发的目标uri
     private String uri;
@@ -33,20 +33,20 @@ public class RouteEntity {
         this.id = id;
     }
 
-    public List<PredicateEntity> getPredicateEntityList() {
-        return predicateEntityList;
+    public List<PredicateEntity> getPredicates() {
+        return predicates;
     }
 
-    public void setPredicateEntityList(List<PredicateEntity> predicateEntityList) {
-        this.predicateEntityList = predicateEntityList;
+    public void setPredicates(List<PredicateEntity> predicates) {
+        this.predicates = predicates;
     }
 
-    public List<FilterEntity> getFilterEntityList() {
-        return filterEntityList;
+    public List<FilterEntity> getFilters() {
+        return filters;
     }
 
-    public void setFilterEntityList(List<FilterEntity> filterEntityList) {
-        this.filterEntityList = filterEntityList;
+    public void setFilters(List<FilterEntity> filters) {
+        this.filters = filters;
     }
 
     public String getUri() {

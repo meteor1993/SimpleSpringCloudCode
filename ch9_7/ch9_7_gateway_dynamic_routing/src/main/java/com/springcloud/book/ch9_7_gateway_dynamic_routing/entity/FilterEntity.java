@@ -14,7 +14,7 @@ public class FilterEntity {
     private String name;
 
     //路由规则
-    private Map<String, String> map = new LinkedHashMap<>();
+    private Map<String, String> args = new LinkedHashMap<>();
 
     public String getName() {
         return name;
@@ -24,11 +24,11 @@ public class FilterEntity {
         this.name = name;
     }
 
-    public Map<String, String> getMap() {
-        return map;
+    public Map<String, String> getArgs() {
+        return args;
     }
 
-    public void setMap(Map<String, String> map) {
-        this.map = map;
+    public void setArgs(Map<String, String> args) {
+        this.args = args;
     }
 }
