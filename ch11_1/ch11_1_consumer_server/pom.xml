@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch11_1_provider_server</artifactId>
+    <artifactId>ch11_1_consumer_server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch11_1_provider_server</name>
-    <description>ch11_1_provider_server</description>
+    <name>ch11_1_consumer_server</name>
+    <description>ch11_1_consumer_server</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -21,6 +21,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
