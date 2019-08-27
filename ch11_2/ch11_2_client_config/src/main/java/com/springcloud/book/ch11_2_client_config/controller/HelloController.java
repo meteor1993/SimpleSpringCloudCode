@@ -1,4 +1,4 @@
-package com.springcloud.book.ch11_1_config_client.controller;
+package com.springcloud.book.ch11_2_client_config.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

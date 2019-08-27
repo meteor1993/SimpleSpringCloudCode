@@ -9,16 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springcloud.book</groupId>
-    <artifactId>ch11_1</artifactId>
+    <artifactId>ch11_2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch11_1</name>
-    <description>ch11_1</description>
+    <name>ch11_2</name>
+    <description>ch11_2</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>ch11_1_provider_server</module>
-        <module>ch11_1_consumer_server</module>
-        <module>ch11_1_config_client</module>
+        <module>ch11_2_client_config</module>
     </modules>
 
     <properties>

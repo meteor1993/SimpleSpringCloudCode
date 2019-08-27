@@ -1,17 +1,12 @@
-server:
-  port: 9000
 spring:
   profiles:
     active: dev
   application:
-    name: spring-cloud-config-client
+    name: spring-cloud-client-config
   cloud:
     nacos:
       config:
         file-extension: yml
         server-addr: 192.168.44.129:8848
-management:
-  endpoints:
-    web:
-      cors:
-        allowed-methods: '*'
+        prefix: nacos-config
+        namespace: 8282c713-da90-486a-8438-2a5a212ef44f
