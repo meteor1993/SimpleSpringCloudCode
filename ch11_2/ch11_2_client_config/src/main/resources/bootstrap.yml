@@ -10,3 +10,6 @@ spring:
         server-addr: 192.168.44.129:8848
         prefix: nacos-config
         namespace: 8282c713-da90-486a-8438-2a5a212ef44f
+        group: TEST_GROUP
+        shared-dataids: base-common.yml,all-common.yml
+        refreshable-dataids: all-common.yml
