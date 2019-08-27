@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: 139.155.11.128:8848
+        prefix: config-nacos
