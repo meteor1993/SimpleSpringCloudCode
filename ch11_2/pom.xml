@@ -17,6 +17,7 @@
 
     <modules>
         <module>ch11_2_client_config</module>
+        <module>ch11_2_zuul_server</module>
     </modules>
 
     <properties>

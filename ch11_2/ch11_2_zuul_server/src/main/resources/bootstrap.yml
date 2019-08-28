@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-zuul-server
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: 139.155.11.128:8848
+        prefix: nacos-config
+        namespace: 8282c713-da90-486a-8438-2a5a212ef44f
