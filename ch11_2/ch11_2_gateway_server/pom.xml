@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch11_2_zuul_server</artifactId>
+    <artifactId>ch11_2_gateway_server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch11_2_zuul_server</name>
-    <description>ch11_2_zuul_server</description>
+    <name>ch11_2_gateway_server</name>
+    <description>ch11_2_gateway_server</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -23,11 +23,11 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package com.springcloud.book.ch11_2_zuul_server;
+package com.springcloud.book.ch11_2_gateway_server;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Ch112ZuulServerApplicationTests {
+public class Ch112GatewayServerApplicationTests {
 
     @Test
     public void contextLoads() {
