@@ -1,7 +1,6 @@
 package com.springcloud.book.ch11_2_gateway_server.config;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.config.ConfigService;
@@ -21,7 +20,6 @@ import org.springframework.cloud.gateway.route.RouteDefinitionWriter;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Mono;
@@ -45,7 +43,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
 
     private final Logger logger = LoggerFactory.getLogger(DynamicRoutingConfig.class);
 
-    private static final String DATA_ID = "zuul-base-dev.yml";
+    private static final String DATA_ID = "zuul-refresh-dev.json";
     private static final String Group = "DEFAULT_GROUP";
 
     @Autowired
@@ -56,7 +54,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
     @Bean
     public void refreshRouting() throws NacosException {
         Properties properties = new Properties();
-        properties.put(PropertyKeyConst.SERVER_ADDR, "139.155.11.128:8848");
+        properties.put(PropertyKeyConst.SERVER_ADDR, "192.168.44.129:8848");
         properties.put(PropertyKeyConst.NAMESPACE, "8282c713-da90-486a-8438-2a5a212ef44f");
         ConfigService configService = NacosFactory.createConfigService(properties);
         configService.addListener(DATA_ID, Group, new Listener() {
@@ -84,18 +82,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
     }
 
     /**
-     * 添加路由
-     * @param routeDefinition
-     * @return
-     */
-    public void add(RouteDefinition routeDefinition){
-        routeDefinitionWriter.save(Mono.just(routeDefinition)).subscribe();
-        this.applicationEventPublisher.publishEvent(new RefreshRoutesEvent(this));
-        logger.info("路由新增成功");
-    }
-
-    /**
-     * 修改路由
+     * 路由更新
      * @param routeDefinition
      * @return
      */
@@ -114,21 +101,6 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
             logger.info("路由更新成功");
         }catch (Exception e){
             logger.error(e.getMessage(), e);
-        }
-    }
-
-    /**
-     * 删除路由
-     * @param routeDefinition
-     * @return
-     */
-    public void delete(RouteDefinition routeDefinition){
-        try {
-            this.routeDefinitionWriter.delete(Mono.just(routeDefinition.getId()));
-            logger.info("路由删除成功");
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-            logger.info("路由删除失败");
         }
     }
 
