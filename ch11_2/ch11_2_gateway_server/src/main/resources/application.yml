@@ -7,12 +7,6 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.44.129:8848
-    gateway:
-      routes:
-        - id: github_route
-          uri: https://github.com
-          predicates:
-            - Path=/spring-cloud
 management:
   endpoints:
     web:

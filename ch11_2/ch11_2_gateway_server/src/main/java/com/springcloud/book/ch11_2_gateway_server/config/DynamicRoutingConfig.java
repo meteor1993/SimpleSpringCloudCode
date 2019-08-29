@@ -1,6 +1,7 @@
 package com.springcloud.book.ch11_2_gateway_server.config;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.config.ConfigService;
@@ -67,11 +68,19 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
             public void receiveConfigInfo(String configInfo) {
                 logger.info(configInfo);
 
-                List<RouteEntity> list = JSON.parseArray(configInfo).toJavaList(RouteEntity.class);
+                boolean refreshGatewayRoute = JSONObject.parseObject(configInfo).getBoolean("refreshGatewayRoute");
 
-                for (RouteEntity route : list) {
-                    update(assembleRouteDefinition(route));
+                if (refreshGatewayRoute) {
+                    List<RouteEntity> list = JSON.parseArray(JSONObject.parseObject(configInfo).getString("routeList")).toJavaList(RouteEntity.class);
+
+                    for (RouteEntity route : list) {
+                        update(assembleRouteDefinition(route));
+                    }
+                } else {
+                    logger.info("路由未发生变更");
                 }
+
+
             }
         });
     }
