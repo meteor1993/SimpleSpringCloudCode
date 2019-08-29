@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.reactivestreams:reactive-streams:1.0.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../Repositorys/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar!/" />
+      <root url="jar://E:/JEECG-repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../Repositorys/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-javadoc.jar!/" />
+      <root url="jar://E:/JEECG-repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../Repositorys/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar!/" />
+      <root url="jar://E:/JEECG-repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

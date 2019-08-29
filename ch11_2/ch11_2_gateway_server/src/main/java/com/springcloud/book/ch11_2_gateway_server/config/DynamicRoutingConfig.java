@@ -1,5 +1,7 @@
 package com.springcloud.book.ch11_2_gateway_server.config;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.config.ConfigService;
@@ -54,7 +56,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
     @Bean
     public void refreshRouting() throws NacosException {
         Properties properties = new Properties();
-        properties.put(PropertyKeyConst.SERVER_ADDR, "192.168.44.129:8848");
+        properties.put(PropertyKeyConst.SERVER_ADDR, "139.155.11.128:8848");
         properties.put(PropertyKeyConst.NAMESPACE, "8282c713-da90-486a-8438-2a5a212ef44f");
         ConfigService configService = NacosFactory.createConfigService(properties);
         configService.addListener(DATA_ID, Group, new Listener() {
@@ -66,8 +68,12 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
             @Override
             public void receiveConfigInfo(String configInfo) {
                 logger.info(configInfo);
-                RouteEntity routeEntity = new RouteEntity();
-                add(assembleRouteDefinition(routeEntity));
+
+                List<RouteEntity> list = JSON.parseArray(configInfo).toJavaList(RouteEntity.class);
+
+                for (RouteEntity route : list) {
+                    update(assembleRouteDefinition(route));
+                }
             }
         });
     }
@@ -108,6 +114,21 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
             logger.info("路由更新成功");
         }catch (Exception e){
             logger.error(e.getMessage(), e);
+        }
+    }
+
+    /**
+     * 删除路由
+     * @param routeDefinition
+     * @return
+     */
+    public void delete(RouteDefinition routeDefinition){
+        try {
+            this.routeDefinitionWriter.delete(Mono.just(routeDefinition.getId()));
+            logger.info("路由删除成功");
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+            logger.info("路由删除失败");
         }
     }
 

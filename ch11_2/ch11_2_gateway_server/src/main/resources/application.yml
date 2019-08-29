@@ -6,17 +6,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.44.129:8848
-
-# 配置输出日志
-logging:
-  level:
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.http.server.reactive: DEBUG
-    org.springframework.web.reactive: DEBUG
-    reactor.ipc.netty: DEBUG
-
-#开启端点
+        server-addr: 139.155.11.128:8848
+    gateway:
+      routes:
+        - id: github_route
+          uri: https://github.com
+          predicates:
+            - Path=/spring-cloud
 management:
   endpoints:
     web:
