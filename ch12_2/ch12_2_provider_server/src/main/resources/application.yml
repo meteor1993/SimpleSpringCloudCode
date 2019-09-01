@@ -1,12 +1,15 @@
 server:
-  port: 9000
+  port: 8000
 spring:
   application:
-    name: web-flux
+    name: spring-cloud-provider-server
   cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.44.129:8848
     sentinel:
       transport:
-        dashboard: 192.168.44.129:8080
+        dashboard: localhost:8080
         port: 8720
 management:
   endpoints:
