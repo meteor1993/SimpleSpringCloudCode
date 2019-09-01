@@ -15,6 +15,12 @@
     <description>ch12_2</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>ch12_2_consumer_fallback</module>
+        <module>ch12_2_consumer_server</module>
+        <module>ch12_2_provider_server</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

@@ -1,6 +1,6 @@
-package com.springcloud.book.ch12_2_consumer_server.controller;
+package com.springcloud.book.ch12_2_consumer_fallback.controller;
 
-import com.springcloud.book.ch12_2_consumer_server.remote.HelloRemote;
+import com.springcloud.book.ch12_2_consumer_fallback.remote.HelloRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

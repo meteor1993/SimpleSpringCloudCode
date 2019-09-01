@@ -16,3 +16,6 @@ management:
     web:
       cors:
         allowed-methods: '*'
+feign:
+  sentinel:
+    enabled: true
