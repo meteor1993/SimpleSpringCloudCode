@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ch12_2_consumer_fallback</artifactId>
+    <artifactId>ch12_2_gateway_server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch12_2_consumer_fallback</name>
-    <description>ch12_2_consumer_fallback</description>
+    <name>ch12_2_gateway_server</name>
+    <description>ch12_2_gateway_server</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -23,11 +23,15 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-spring-cloud-gateway-adapter</artifactId>
         </dependency>
     </dependencies>
 

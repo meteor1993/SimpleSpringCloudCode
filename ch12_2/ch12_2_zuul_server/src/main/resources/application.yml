@@ -16,6 +16,3 @@ zuul:
     consumer-route:
       path: /consumer/**
       serviceId: spring-cloud-consumer-fallback
-    blog-route:
-      path: /blog/**
-      url: http://www.geekdigging.com/
