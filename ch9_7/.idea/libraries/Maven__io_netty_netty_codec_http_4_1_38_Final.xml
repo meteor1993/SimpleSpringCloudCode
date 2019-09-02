@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: io.netty:netty-codec-http:4.1.38.Final">
     <CLASSES>
-      <root url="jar://E:/JEECG-repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final.jar!/" />
+      <root url="jar://D:/repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://E:/JEECG-repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final-javadoc.jar!/" />
+      <root url="jar://D:/repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://E:/JEECG-repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final-sources.jar!/" />
+      <root url="jar://D:/repository/io/netty/netty-codec-http/4.1.38.Final/netty-codec-http-4.1.38.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

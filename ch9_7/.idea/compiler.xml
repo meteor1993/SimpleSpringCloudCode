@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ch9_7" />
         <module name="ch9_7_gateway_dynamic_routing" />
       </profile>
     </annotationProcessing>
@@ -13,11 +14,5 @@
       <module name="ch9_7" target="1.8" />
       <module name="ch9_7_gateway_dynamic_routing" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ch9_7" options="-parameters" />
-      <module name="ch9_7_gateway_dynamic_routing" options="-parameters" />
-    </option>
   </component>
 </project>

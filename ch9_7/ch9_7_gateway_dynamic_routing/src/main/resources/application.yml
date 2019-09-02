@@ -4,7 +4,7 @@ spring:
   application:
     name: spring-cloud-gateway-dynamic-routing
 
-# é…ç½®è¾“å‡ºæ—¥å¿—
+# ÅäÖÃÊä³öÈÕÖ¾
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
@@ -12,7 +12,7 @@ logging:
     org.springframework.web.reactive: DEBUG
     reactor.ipc.netty: DEBUG
 
-#å¼€å¯ç«¯ç‚¹
+#¿ªÆô¶Ëµã
 management:
   endpoints:
     web:
