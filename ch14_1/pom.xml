@@ -18,6 +18,7 @@
     <modules>
         <module>ch14_1_dubbo_api</module>
         <module>ch14_1_dubbo_provider</module>
+        <module>ch14_1_dubbo_consumer</module>
     </modules>
 
     <properties>
