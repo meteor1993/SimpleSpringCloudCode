@@ -6,5 +6,5 @@ package com.springcloud.book.ch14_1_dubbo_api.service;
  * @Desc:
  */
 public interface HelloService {
-    String hello();
+    String hello(String name);
 }
