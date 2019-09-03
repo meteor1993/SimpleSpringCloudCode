@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-predicate-query
+  cloud:
+    gateway:
+      routes:
+      - id: query_route
+        uri: https://github.com
+        predicates:
+#        - Query=name
+        - Query=name, a.
+
+

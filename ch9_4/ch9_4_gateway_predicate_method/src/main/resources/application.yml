@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-predicate-method
+  cloud:
+    gateway:
+      routes:
+      - id: method_route
+        uri: https://github.com
+        predicates:
+        - Method=GET
+

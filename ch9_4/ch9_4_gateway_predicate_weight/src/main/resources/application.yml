@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-predicate-weight
+  cloud:
+    gateway:
+      routes:
+      - id: weight_high
+        uri: https://github.com
+        predicates:
+        - Weight=group1, 8
+      - id: weight_low
+        uri: https://www.baidu.com
+        predicates:
+        - Weight=group2, 2
+
