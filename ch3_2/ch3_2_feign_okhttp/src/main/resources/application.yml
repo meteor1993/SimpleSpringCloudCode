@@ -1,8 +1,0 @@
-server:
-  port: 8080
-spring:
-  application:
-    name: spring-cloud-feign-okhttp
-feign:
-  okhttp:
-    enabled: true

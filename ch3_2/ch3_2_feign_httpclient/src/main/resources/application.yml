@@ -1,8 +1,0 @@
-server:
-  port: 8080
-spring:
-  application:
-    name: spring-cloud-feign-httpclient
-feign:
-  httpclient:
-    enabled: true

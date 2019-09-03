@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ch3_2_feign_config:war">
-    <output-path>$PROJECT_DIR$/ch3_2_feign_config/target</output-path>
-    <root id="archive" name="ch3_2_feign_config.war">
-      <element id="artifact" artifact-name="ch3_2_feign_config:war exploded" />
-    </root>
-  </artifact>
-</component>

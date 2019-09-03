@@ -1,5 +1,0 @@
-server:
-  port: 9000
-spring:
-  application:
-    name: spring-cloud-feign-filedownload-provider
