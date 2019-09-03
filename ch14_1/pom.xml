@@ -9,19 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springcloud.book</groupId>
-    <artifactId>ch12_2</artifactId>
+    <artifactId>ch14_1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ch12_2</name>
-    <description>ch12_2</description>
+    <name>ch14_1</name>
+    <description>ch14_1</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>ch12_2_consumer_fallback</module>
-        <module>ch12_2_consumer_server</module>
-        <module>ch12_2_provider_server</module>
-        <module>ch12_2_zuul_server</module>
-        <module>ch12_2_gateway_server</module>
-        <module>ch12_2_sentinel_nacos</module>
+        <module>ch14_1_dubbo_api</module>
     </modules>
 
     <properties>
@@ -57,14 +52,23 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
