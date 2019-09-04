@@ -10,9 +10,9 @@ import java.util.Collection;
  * @Desc:
  */
 public interface UserService {
-    boolean save(UserModel user);
+    UserModel save(UserModel user);
 
-    boolean remove(Long userId);
+    void remove(Long userId);
 
     Collection<UserModel> findAll();
 }

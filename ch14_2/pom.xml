@@ -15,6 +15,12 @@
     <description>ch14_2</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>ch14_2_dubbo_api</module>
+        <module>ch14_2_dubbo_provider_web</module>
+        <module>ch14_2_spring_cloud_consumer</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -50,11 +56,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!-- Dubbo Spring Cloud Starter -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
         <!-- Spring Cloud Nacos Service Discovery -->
         <dependency>
