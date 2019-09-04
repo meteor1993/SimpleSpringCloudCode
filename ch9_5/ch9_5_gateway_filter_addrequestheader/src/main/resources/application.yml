@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-filter-addrequestheader
+  cloud:
+    gateway:
+      routes:
+      - id: addrequestheader_filter
+        uri: http://localhost:8081
+        predicates:
+        - Path= /hello/{segment}
+        filters:
+        - AddRequestHeader= X-Request-hello, alpaca

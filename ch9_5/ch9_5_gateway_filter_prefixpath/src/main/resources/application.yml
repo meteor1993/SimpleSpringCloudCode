@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway-filter-prefixpath
+  cloud:
+    gateway:
+      routes:
+      - id: prefixpath_filter
+        uri: http://localhost:8081
+        predicates:
+        - Path= /prefixPath
+        filters:
+        - PrefixPath=/hello

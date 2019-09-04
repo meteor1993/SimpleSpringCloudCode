@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <groupId>com.springcloud.book</groupId>
     <artifactId>ch9_7_gateway_dynamic_routing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ch9_7_gateway_dynamic_routing</name>
