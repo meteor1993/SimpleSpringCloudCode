@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ch9_6_gateway_globalfilter_provider:war">
-    <output-path>$PROJECT_DIR$/ch9_6_gateway_globalfilter_provider/target</output-path>
-    <root id="archive" name="ch9_6_gateway_globalfilter_provider.war">
-      <element id="artifact" artifact-name="ch9_6_gateway_globalfilter_provider:war exploded" />
-    </root>
-  </artifact>
-</component>
