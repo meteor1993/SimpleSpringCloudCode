@@ -19,6 +19,7 @@
         <module>ch14_2_dubbo_api</module>
         <module>ch14_2_dubbo_provider_web</module>
         <module>ch14_2_spring_cloud_consumer</module>
+        <module>ch14_2_dubbo_consumer</module>
     </modules>
 
     <properties>

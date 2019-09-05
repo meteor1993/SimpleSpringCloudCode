@@ -15,7 +15,7 @@ import java.util.Collection;
 @RestController
 public class UserController {
 
-    @Reference
+    @Reference(version = "1.0.0")
     UserService userService;
 
     @PostMapping("/save")
