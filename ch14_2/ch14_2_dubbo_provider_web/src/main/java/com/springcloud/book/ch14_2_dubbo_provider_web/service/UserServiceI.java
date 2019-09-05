@@ -18,7 +18,7 @@ import java.util.Map;
  * @email: inwsy@hotmail.com
  * Description:
  */
-@Service(version = "1.0.0")
+@Service
 @RestController
 @Slf4j
 public class UserServiceI implements UserService {
