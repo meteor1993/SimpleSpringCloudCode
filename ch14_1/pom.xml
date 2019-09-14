@@ -15,6 +15,13 @@
     <description>ch14_1</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>ch14_1_common</module>
+        <module>ch14_1_order_server</module>
+        <module>ch14_1_pay_server</module>
+        <module>ch14_1_storage_server</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
